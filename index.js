@@ -7,7 +7,7 @@ const moment = require("moment-timezone");
 const jwt = require("jsonwebtoken");
 
 require("dotenv").config();
-app.use(express.static("dist"));
+app.use(express.json());
 
 //MIDDLE WARE
 const corsOptions = {
